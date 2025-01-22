@@ -46,6 +46,13 @@ pip install -e .
 pip install flash-attn --no-build-isolation
 ```
 
+### Download Model
+
+```bash
+git lfs install
+git clone https://huggingface.co/GoodiesHere/Apollo-LMMs-Apollo-7B-t32
+```
+
 ### Inference Example
 
 ```python
