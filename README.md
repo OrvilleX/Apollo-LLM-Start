@@ -3,7 +3,7 @@ license: apache-2.0
 ---
 <div align="center">
 
-# Apollo: An Exploration of Video Understanding in Large Multimodal Models
+# Apollo：大型多模态模型中的视频理解探索
 
 <p align="center">
     <img src="assets/icon.jpg" width="150" style="margin-bottom: 0.2;"/>
@@ -31,29 +31,29 @@ license: apache-2.0
 
 
 
-Apollo is a family of Large Multimodal Models (LMMs) designed to address a broad spectrum of video-language tasks, including long-form video comprehension, temporal reasoning, and multi-turn video conversations. Apollo achieves state-of-the-art performance across several benchmarks and scales efficiently from billions to tens of billions of parameters.
+Apollo 是一个旨在解决广泛视频-语言任务的大型多模态模型（LMMs）系列，包括长视频理解、时间推理和多轮视频对话。Apollo 在多个基准测试中实现了最先进的性能，并能够高效地从数十亿扩展到数百亿参数。
 
-## Release
-- **[Dec 13, 2024]** Apollo released!
-- **[Coming soon..]** Training code will be released upon internal approval.
+## 发布信息
+- **[2024年12月13日]** Apollo 正式发布！
+- **[即将推出...]** 训练代码将在获得内部批准后发布。
 
-## Quick Start
+## 快速开始
 
-### Installation
+### 安装
 
 ```bash
 pip install -e .
 pip install flash-attn --no-build-isolation
 ```
 
-### Download Model
+### 下载模型
 
 ```bash
 git lfs install
 git clone https://huggingface.co/GoodiesHere/Apollo-LMMs-Apollo-7B-t32
 ```
 
-### Inference Example
+### 推理示例
 
 ```python
 import torch
@@ -143,13 +143,13 @@ pred = tokenizer.batch_decode(output_ids, skip_special_tokens=True)[0].strip()
 print(pred)
 ```
 
-### PEFT (Parameter-Efficient Fine-Tuning)
-- **(Coming soon..)** We will provide examples and documentation on how to apply low-rank adaptation (LoRA) and other parameter-efficient fine-tuning techniques to Apollo.
+### PEFT（参数高效微调）
+- **(即将推出...)** 我们将提供如何将低秩适应（LoRA）和其他参数高效微调技术应用于 Apollo 的示例和文档。
 
 
-## Citation
+## 引用
 
-If you find Apollo useful in your research, please cite:
+如果您在研究中使用了 Apollo，请引用：
 ```bibtex
 @article{apollo,
     title={Apollo: An Exploration of Video Understanding in Large Multimodal Models},
